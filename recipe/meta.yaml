@@ -1,13 +1,13 @@
 {% set name = "install-jdk" %}
-{% set version = "0.3.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/install-jdk-{{ version }}.tar.gz
-  sha256: 889965b0af68bb4669166804f33d5dce9cd6cf57f02a045e427e508998d569a1
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: ef850b42a011ff1dbae34698b31ead1a21c060079723bf0d83a52dd276400002
 
 build:
   noarch: python
