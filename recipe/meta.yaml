@@ -1,5 +1,5 @@
 {% set name = "install-jdk" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 25c1a78c1531d28a47361dafd2d31bfae7db5b4a3fc14ea5f5eda438216be8a1
+  sha256: 51786cf98f7c5f7223e08213200dde839a5d526150b635e86c42a422b087f8e1
 
 build:
   noarch: python
